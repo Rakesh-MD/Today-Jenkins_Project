@@ -12,5 +12,13 @@ pipeline{
                 sh 'sleep 5'
             }
         }
+         stage('Test'){
+            steps{
+                echo "Building 2 nd Stage ..!"
+                sh 'sleep 5'
+                sh 'pwd'
+                sh 'maven clean install'
+            }
+        }
     }
 }
