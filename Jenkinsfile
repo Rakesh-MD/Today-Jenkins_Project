@@ -17,7 +17,7 @@ pipeline{
                 echo "Building 2 nd Stage ..!"
                 sh 'sleep 5'
                 sh 'pwd'
-                sh 'maven clean install'
+                sh 'maven clean install package'
             }
         }
     }
